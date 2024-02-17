@@ -3,16 +3,21 @@ import java.util.Scanner;
 public class 문장_속_단어_3 {
 
     public String Solution(String str) {
-        String[] array = str.split(" ");
         String answer = "";
 
-        int max = Integer.MIN_VALUE;
-        for (int i = 0; i < array.length; i++) {
-            if(array[i].length() > max) {
-                max = array[i].length();
-                answer = array[i];
+        int max = Integer.MIN_VALUE, pos;
+        while((pos=str.indexOf(' ')) != -1) {
+            String tmp = str.substring(0,pos);
+            int len = tmp.length();
+
+            if(len > max) {
+                max = len;
+                answer = tmp;
             }
+            str = str.substring(pos+1);
         }
+        //마지막 단어
+        if(str.length() > max) answer = str;
 
         return answer;
 
