@@ -1,3 +1,5 @@
+package String;
+
 import java.util.Scanner;
 
 public class 유효한_팰린드롬_8 {

@@ -1,3 +1,5 @@
+package String;
+
 import java.util.Scanner;
 
 public class 문자찾기_1 {

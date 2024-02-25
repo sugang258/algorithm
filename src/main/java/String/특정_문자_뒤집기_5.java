@@ -1,3 +1,5 @@
+package String;
+
 import java.util.Scanner;
 
 public class 특정_문자_뒤집기_5 {

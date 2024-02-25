@@ -1,3 +1,5 @@
+package String;
+
 import java.util.Scanner;
 
 public class 숫자만_추출_9 {

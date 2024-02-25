@@ -1,3 +1,5 @@
+package String;
+
 import java.util.Scanner;
 
 public class 회문_문자열_7 {

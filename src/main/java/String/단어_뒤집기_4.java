@@ -1,3 +1,5 @@
+package String;
+
 import java.util.Scanner;
 
 public class 단어_뒤집기_4 {

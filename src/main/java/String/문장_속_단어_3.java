@@ -1,3 +1,5 @@
+package String;
+
 import java.util.Scanner;
 
 public class 문장_속_단어_3 {

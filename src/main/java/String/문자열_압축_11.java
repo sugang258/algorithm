@@ -1,3 +1,5 @@
+package String;
+
 import java.util.Scanner;
 
 public class 문자열_압축_11 {

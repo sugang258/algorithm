@@ -1,3 +1,5 @@
+package String;
+
 import java.util.Scanner;
 
 public class 중복문자제거_6 {
