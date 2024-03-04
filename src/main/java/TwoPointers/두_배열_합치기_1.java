@@ -3,7 +3,7 @@ package TwoPointers;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class 두_배열_합치기 {
+public class 두_배열_합치기_1 {
 
     public ArrayList<Integer> Solution(int n, int m, int[] a, int[] b) {
         ArrayList<Integer> answer = new ArrayList<>();
@@ -20,7 +20,7 @@ public class 두_배열_합치기 {
     }
 
     public static void main(String[] args) {
-        두_배열_합치기 T = new 두_배열_합치기();
+        두_배열_합치기_1 T = new 두_배열_합치기_1();
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
