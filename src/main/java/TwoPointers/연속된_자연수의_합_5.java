@@ -19,11 +19,23 @@ public class 연속된_자연수의_합_5 {
         return count;
     }
 
+    public int Solution_Math(int n) {
+        int count = 0, cnt = 1;
+        n--;
+        while(n > 0) {
+            cnt++;
+            n = n-cnt;
+
+            if(n % cnt == 0) count++;
+        }
+        return count;
+    }
+
     public static void main(String[] args) {
         연속된_자연수의_합_5 T = new 연속된_자연수의_합_5();
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
-        System.out.println(T.Solution(n));
+        System.out.println(T.Solution_Math(n));
     }
 }
