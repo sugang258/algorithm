@@ -7,20 +7,15 @@ public class 아나그램_2 {
 
     public String Solution(String s1, String s2) {
         HashMap<Character,Integer> map1 = new HashMap<>();
-        HashMap<Character,Integer> map2 = new HashMap<>();
 
         for(char x : s1.toCharArray()) {
             map1.put(x, map1.getOrDefault(x,0)+1);
         }
         for(char x : s2.toCharArray()) {
-            map2.put(x, map2.getOrDefault(x,0)+1);
+            if(!map1.containsKey(x) || map1.get(x) == 0) return "NO";
+            map1.put(x, map1.get(x)-1);
         }
-
-        if(map1.equals(map2)) {
-            return "YES";
-        }
-
-        return "NO";
+        return "YES";
     }
 
     public static void main(String[] args) {
