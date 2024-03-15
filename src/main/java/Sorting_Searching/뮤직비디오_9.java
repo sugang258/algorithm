@@ -1,5 +1,6 @@
 package Sorting_Searching;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class 뮤직비디오_9 {
@@ -7,22 +8,16 @@ public class 뮤직비디오_9 {
     public int Solution(int n, int m, int[] ar) {
 
         //DVD 최소 용량이 될 수 있는 범위 : 9 ~ 45
-        int start = ar[n-1];
-        int end = 0;
-        for (int i = 0; i < n; i++) {
-            end += ar[i];
-        }
-        int mid = (end+start) / 2;
+        int start = Arrays.stream(ar).max().getAsInt();
+        int end = Arrays.stream(ar).sum();
         int min = Integer.MAX_VALUE;
 
-        while(end - start >= 0) {
+        while(start <= end) {
+            int mid = (end+start) / 2;
             if (check(n,m,ar,mid) == true) {
-                end = mid - 1;
                 min = Math.min(min,mid);
-            } else {
-                start = mid + 1;
-            }
-            mid = (end+start) / 2;
+                end = mid - 1;
+            } else start = mid + 1;
         }
         return min;
     }
