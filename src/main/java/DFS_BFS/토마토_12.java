@@ -88,16 +88,6 @@ public class 토마토_12 {
             }
         }
 
-        int cnt = 0;
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                if(dis[i][j] == 0) {
-                    cnt++;
-                }
-            }
-        }
-        if (cnt == n * m) day = 0;
-
         System.out.println(day);
     }
 }
